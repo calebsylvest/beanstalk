@@ -1,0 +1,58 @@
+/* Type */
+
+body {
+	font: $mobile-base-font-size $body-font-family;
+	
+	@media screen and (min-width: $small-screen) {
+		font-size: $base-font-size;
+	}
+}
+
+// We like off-black for text.
+body, select, input, textarea {color: $body-font-color;}
+
+a {color: $primary-color; @include transition();}
+a:hover {color: ligthen($primary-color, 20%);}
+
+// Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301)
+::-moz-selection{background: $primary-color; color: #fff; text-shadow: none;}
+::selection {background: $primary-color; color: #fff; text-shadow: none;} 
+
+//	j.mp/webkit-tap-highlight-color
+a:link {-webkit-tap-highlight-color: $primary-color;} 
+
+ins {background-color: $primary-color; color: #000; text-decoration: none;}
+mark {background-color: $primary-color; color: #000; font-style: italic; font-weight: bold;}
+
+// Mozilla dosen't style place holders by default
+input:-moz-placeholder { color: #a8a8a8; }
+textarea:-moz-placeholder { color: #a9a9a9; }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $header-font-family;
+	line-height: $header-line-height;
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+h5 {
+  font-size: $h5-font-size;
+}
+
+h6 {
+  font-size: $h6-font-size;
+}

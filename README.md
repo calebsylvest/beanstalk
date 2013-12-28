@@ -1,4 +1,4 @@
-beanstalk
-=========
+bean
+====
 
-A flexible, responsive grid system built with style using Sass.
+A basic boilerplate for a front-end Sass framework. Sweet dude!
