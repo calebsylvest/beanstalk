@@ -37,6 +37,17 @@ $total-columns: 12 !default;
     padding-left: 0;
     padding-right: 0;
   }
+  
+  &.collapse-outer > .column,
+  &.collapse-outer > .columns {  
+    
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
 }
 
 .column,
