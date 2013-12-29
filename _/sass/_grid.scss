@@ -1,10 +1,11 @@
-/* Grid 
+/* Beanstalk Felxible Grid 
  *
- * a flexible grid system called Beanstalk
+ * A flexible, responsive grid system built with style using Sass.
  *
+ * Made by Caleb Sylvest
+ * www.calebsylvest.com
  *
  */
-
 
 $row-width: 960px !default;
 $column-gutter: 0.9375em !default;
@@ -108,11 +109,11 @@ $total-columns: 12 !default;
  *
  *
  *
- */
+*/
 .column,
 .columns {
   background-color: rgba(246,191,222,.6);
   border: 1px solid red;
   border-top: none;
   border-bottom: none;
-}
+} 

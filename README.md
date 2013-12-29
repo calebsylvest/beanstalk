@@ -95,7 +95,6 @@ Adding a `.push-#` class offers a way to bump content to the right.
     A six column container.
   </div>
 </div>
-
 ```
 
 #### Pull
@@ -112,7 +111,6 @@ Adding a `.pull-#` class offers a way to pull content to the left.
     A four column container that is pulled two column widths to the left.
   </div>
 </div>
-
 ```
 
 #### Collapse
