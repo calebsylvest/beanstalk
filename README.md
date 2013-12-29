@@ -117,6 +117,22 @@ Adding a `.pull-#` class offers a way to pull content to the left.
 
 #### Collapse
 
+Adding `.collapse` along with a `.row` will zero out the gutters of all children columns.
+
+```
+<div class="row collapse">
+
+  <div class="col-8 column">
+    A main content section that no longer has gutters.
+  </div>
+  
+  <div class="col-4 column">
+    A secondary content section that no longer has gutters.
+  </div>
+
+</div>
+```
+
 #### Collapse-outer
 
 ## Support & Questions
