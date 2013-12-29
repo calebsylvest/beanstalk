@@ -125,7 +125,6 @@ Adding `.collapse` along with a `.row` will zero out the gutters of all children
   <div class="col-8 column">
     A main content section that no longer has gutters.
   </div>
-  
   <div class="col-4 column">
     A secondary content section that no longer has gutters.
   </div>
@@ -135,7 +134,22 @@ Adding `.collapse` along with a `.row` will zero out the gutters of all children
 
 #### Collapse-outer
 
-## Support & Questions
+Adding `.collapse-outer` along with a `.row` will zero out the left gutter of the first column and the right gutter of the last column. This allows a way to align content if needed.
+
+```
+<div class="row collapse-outer">
+
+  <div class="col-8 column">
+    A main content section that has a right gutter but the left gutter has been zeroed out.
+  </div>
+  <div class="col-4 column">
+    A secondary content section that has a left gutter but the right gutter has been zeroed out.
+  </div>
+
+</div>
+```
+
+## Support, Questions, & Suggestions
 
 If you have a question or issue:
 
