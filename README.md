@@ -8,8 +8,8 @@ Beanstalk was loosely based off the grid system used by Zurb's Foundation, but a
 
 Getting started with Beanstalk is super simple, after all the only necessity is adding the _grid.scss file to your Sass based project.
 
-- Download or Clone the Beanstalk project from Github (or just the _grid.scss file)
-- Add the _grid.scss partial to you Sass based project, and reference in the parent .scss file
+- Download or Clone the Beanstalk project from Github (or just the `_grid.scss` file)
+- Add the `_grid.scss` partial to you Sass based project, and reference in the parent .scss file
 - Compile code (I'm using Compass)
 - Check the compiled CSS file, all Beanstalk grid classes should be available
 
@@ -31,5 +31,64 @@ $total-columns: 12 !default;
 
 ### Grid Building
 
+Beanstalk uses a `.row` and `.col-#` syntax to build a flexible grid, where all columns are contained within a parent `.row`. 
+
+```
+
+<div class="row">
+  
+  <div class="col-8 column">
+    This is the main content area.
+  </div>
+  
+  <div class="col-4 column">
+    This is the sidebar area.
+  </div>
+  
+</div>
+
+
+```
+
+#### Working Mobile First
+
+The Beanstalk grid system works with a mobile first mentality, meaning the bare minimum of code is loaded on mobile devices (with the least amount of bandwidth) and built upon for desktop browsers (typically higher bandwidth). 
+
+By default all `.column` grid containers are 100% full-width on mobile, defined by the `.column` class. The `.col-#` grid styles kick in on larger viewports through the use of a @media-query calling a `$small-screen` variable (you can change the variable to whatever your want, or just a number).
+
+Beanstalk also offers extra mobile styles to minutely control the display of content specifically on mobile devices. Add the mobile class `.small-col-#` on top of other grid classes for specific positioning on mobile.
+
+```
+
+<div class="row">
+
+  <div class"small-col-6 col-4 column">
+    On mobile, will be a two column grid and on desktop will be four column
+  </div>
+  
+  <div class"small-col-6 col-4 column">
+    On mobile, will be a two column grid and on desktop will be four column
+  </div>
+  
+  <div class"small-col-6 col-4 column">
+    On mobile, will be a two column grid and on desktop will be four column
+  </div>
+  
+  <div class"small-col-6 col-4 column">
+    On mobile, will be a two column grid and on desktop will be four column
+  </div>
+
+</div>
+
+
+```
 
 ### Modifiers
+
+push
+
+pull
+
+collapse
+
+collapse-outer
