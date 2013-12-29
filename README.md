@@ -6,7 +6,7 @@ Beanstalk was loosely based off the grid system used by Zurb's Foundation, but a
 
 ## Getting Started
 
-Getting started with Beanstalk is super simple, after all the only necessity is adding the _grid.scss file to your Sass based project.
+Getting started with Beanstalk is super simple, after all the only necessity is adding the `_grid.scss` file to your Sass based project.
 
 - Download or Clone the Beanstalk project from Github (or just the `_grid.scss` file)
 - Add the `_grid.scss` partial to you Sass based project, and reference in the parent .scss file
@@ -79,9 +79,41 @@ Beanstalk also offers extra mobile styles to minutely control the display of con
 
 ### Modifiers
 
+Beanstalk offers several types of grid modifiers allow the right amount of control of a website layout.
+
 #### Push
 
+Adding a `.push-#` class offers a way to bump content to the right.
+
+```
+<div class="row">
+
+  <div class="col-4 push-2 column">
+    A four column container that is pushed two column widths to the right.
+  </div>
+  <div class="col-6 column">
+    A six column container.
+  </div>
+</div>
+
+```
+
 #### Pull
+
+Adding a `.pull-#` class offers a way to pull content to the left.
+
+```
+<div class="row">
+
+  <div class="col-6 column">
+    A six column container.
+  </div>
+  <div class="col-4 pull-2 column">
+    A four column container that is pulled two column widths to the left.
+  </div>
+</div>
+
+```
 
 #### Collapse
 
@@ -93,4 +125,4 @@ If you have a question or issue:
 
 1. [Log an Issue] (https://github.com/calebsylvest/beanstalk/issues "Log an Issue for Beanstalk")
 2. Send me an email at [caleb.sylvest@gmail.com] (mailto:caleb.sylvest@gmail.com)
-3. Find my on Twitter at [@sylvezine](https://twitter.com/sylvezine)
+3. Find me on Twitter at [@sylvezine](https://twitter.com/sylvezine)
