@@ -75,35 +75,33 @@ $total-columns: 12 !default;
   }
 }
 
-// generate flexible grid
 @media screen and (min-width: $small-screen) {
   
+  // generate flexible grid above mobile  
   @for $i from 1 through $total-columns {
     .col-#{$i} {
       width: ((100 / $total-columns) * $i) * 1%;
     }
   }
-}
-
-// generate push grid options
-@for $i from 1 through $total-columns {
-  .push-#{$i} {
-    position: relative;
-    left: ((100 / $total-columns) * $i) * 1%;
-    right: auto;
+  
+  // generate push grid options
+  @for $i from 1 through $total-columns {
+    .push-#{$i} {
+      position: relative;
+      left: ((100 / $total-columns) * $i) * 1%;
+      right: auto;
+    }
+  }
+  
+  // generate pull grid options
+  @for $i from 1 through $total-columns {
+    .pull-#{$i} {
+      position: relative;
+      right: ((100 / $total-columns) * $i) * 1%;
+      left: auto;
+    }
   }
 }
-
-// generate pull grid options
-@for $i from 1 through $total-columns {
-  .pull-#{$i} {
-    position: relative;
-    right: ((100 / $total-columns) * $i) * 1%;
-    left: auto;
-  }
-}
-
-
 
 /* this should be deleted, only temp to show grids 
  *
