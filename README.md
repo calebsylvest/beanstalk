@@ -34,7 +34,6 @@ $total-columns: 12 !default;
 Beanstalk uses a `.row` and `.col-#` syntax to build a flexible grid, where all columns are contained within a parent `.row`. 
 
 ```
-
 <div class="row">
   
   <div class="col-8 column">
@@ -46,8 +45,6 @@ Beanstalk uses a `.row` and `.col-#` syntax to build a flexible grid, where all 
   </div>
   
 </div>
-
-
 ```
 
 #### Working Mobile First
@@ -59,7 +56,6 @@ By default all `.column` grid containers are 100% full-width on mobile, defined 
 Beanstalk also offers extra mobile styles to minutely control the display of content specifically on mobile devices. Add the mobile class `.small-col-#` on top of other grid classes for specific positioning on mobile.
 
 ```
-
 <div class="row">
 
   <div class"small-col-6 col-4 column">
@@ -79,16 +75,22 @@ Beanstalk also offers extra mobile styles to minutely control the display of con
   </div>
 
 </div>
-
-
 ```
 
 ### Modifiers
 
-push
+#### Push
 
-pull
+#### Pull
 
-collapse
+#### Collapse
 
-collapse-outer
+#### Collapse-outer
+
+## Support & Questions
+
+If you have a question or issue:
+
+1. [Log an Issue] (https://github.com/calebsylvest/beanstalk/issues "Log an Issue for Beanstalk")
+2. Send me an email at [caleb.sylvest@gmail.com] (mailto:caleb.sylvest@gmail.com)
+3. Find my on Twitter at [@sylvezine](https://twitter.com/sylvezine)
