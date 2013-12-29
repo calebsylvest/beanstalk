@@ -225,6 +225,107 @@ button {
 }
 
 /* Variables */
+/* Global */
+/* line 87, ../sass/_global.scss */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 92, ../sass/_global.scss */
+a:focus {
+  outline: none;
+}
+
+/* line 97, ../sass/_global.scss */
+img,
+object,
+embed {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 100, ../sass/_global.scss */
+object,
+embed {
+  height: 100%;
+}
+
+/* line 101, ../sass/_global.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 107, ../sass/_global.scss */
+#map_canvas img,
+#map_canvas embed,
+#map_canvas object,
+.map_canvas img,
+.map_canvas embed,
+.map_canvas object {
+  max-width: none !important;
+}
+
+/* line 112, ../sass/_global.scss */
+.left {
+  float: left !important;
+}
+
+/* line 113, ../sass/_global.scss */
+.right {
+  float: right !important;
+}
+
+/* line 114, ../sass/_global.scss */
+.text-left {
+  text-align: left !important;
+}
+
+/* line 115, ../sass/_global.scss */
+.text-right {
+  text-align: right !important;
+}
+
+/* line 116, ../sass/_global.scss */
+.text-center {
+  text-align: center !important;
+}
+
+/* line 117, ../sass/_global.scss */
+.text-justify {
+  text-align: justify !important;
+}
+
+/* line 118, ../sass/_global.scss */
+.hide {
+  display: none;
+}
+
+/* line 124, ../sass/_global.scss */
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 127, ../sass/_global.scss */
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 137, ../sass/_global.scss */
+textarea {
+  height: auto;
+  min-height: 50px;
+}
+
+/* line 140, ../sass/_global.scss */
+select {
+  width: 100%;
+}
+
 /* Grid 
  *
  * a flexible grid system called Beanstalk
@@ -576,4 +677,115 @@ button {
   border: 1px solid red;
   border-top: none;
   border-bottom: none;
+}
+
+/* Type */
+/* line 3, ../sass/_type.scss */
+body {
+  font: 87.5% "Open Sans", Verdana, Geneva, sans-serif;
+}
+@media screen and (min-width: 600px) {
+  /* line 3, ../sass/_type.scss */
+  body {
+    font-size: 100%;
+  }
+}
+
+/* line 12, ../sass/_type.scss */
+body, select, input, textarea {
+  color: #333332;
+}
+
+/* line 14, ../sass/_type.scss */
+a {
+  color: #f05133;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+/* line 15, ../sass/_type.scss */
+a:hover {
+  color: ligthen(#f05133, 20%);
+}
+
+/* line 18, ../sass/_type.scss */
+::-moz-selection {
+  background: #f05133;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 19, ../sass/_type.scss */
+::selection {
+  background: #f05133;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 22, ../sass/_type.scss */
+a:link {
+  -webkit-tap-highlight-color: #f05133;
+}
+
+/* line 24, ../sass/_type.scss */
+ins {
+  background-color: #f05133;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 25, ../sass/_type.scss */
+mark {
+  background-color: #f05133;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 28, ../sass/_type.scss */
+input:-moz-placeholder {
+  color: #a8a8a8;
+}
+
+/* line 29, ../sass/_type.scss */
+textarea:-moz-placeholder {
+  color: #a9a9a9;
+}
+
+/* line 31, ../sass/_type.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", Verdana, Geneva, sans-serif;
+  line-height: 1.5;
+}
+
+/* line 36, ../sass/_type.scss */
+h1 {
+  font-size: emCalc(44px);
+}
+
+/* line 40, ../sass/_type.scss */
+h2 {
+  font-size: emCalc(36px);
+}
+
+/* line 44, ../sass/_type.scss */
+h3 {
+  font-size: emCalc(27px);
+}
+
+/* line 48, ../sass/_type.scss */
+h4 {
+  font-size: emCalc(22px);
+}
+
+/* line 52, ../sass/_type.scss */
+h5 {
+  font-size: emCalc(18px);
+}
+
+/* line 56, ../sass/_type.scss */
+h6 {
+  font-size: 1em;
 }
