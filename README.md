@@ -21,12 +21,13 @@ Beanstalk uses a `.row` and `.col-#` syntax to build a flexible grid.
 
 Beanstalk dynamically builds a grid based on customizable variables. The `_grid.scss` file includes basic variable defaults that can be modified or overwritten in a `_vars.scss` partial (or whatever method you prefer to handle variables).
 
-The `$row-width` variable controls the max-width of a responsive site. The `$column-gutter` variable controls the gutter between grid columns. The `$total-columns` variable controls the number of columns generated in the grid. By default Beanstalk is a 12 column grid system, but changing the number of columns is easy.
+The `$row-width` variable controls the max-width of a responsive site. The `$column-gutter` variable controls the gutter between grid columns. The `$total-columns` variable controls the number of columns generated in the grid. By default Beanstalk is a 12 column grid system, but changing the number of columns is easy. The `$show-grid` variable, if set to `true`, will color all grid columns a transparent red color. This is only for testing and demonstration purposes and the variable is set to `false` by default.
 
 ```
 $row-width: 960px !default;
 $column-gutter: 0.9375em !default;
 $total-columns: 12 !default;
+$show-grid: false !default;
 ```
 
 ### Grid Building
@@ -94,6 +95,7 @@ Adding a `.push-#` class offers a way to bump content to the right.
   <div class="col-6 column">
     A six column container.
   </div>
+  
 </div>
 ```
 
@@ -110,6 +112,7 @@ Adding a `.pull-#` class offers a way to pull content to the left.
   <div class="col-4 pull-2 column">
     A four column container that is pulled two column widths to the left.
   </div>
+  
 </div>
 ```
 
