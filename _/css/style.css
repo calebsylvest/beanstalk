@@ -567,19 +567,6 @@ select {
     left: auto;
   }
 }
-/* this should be deleted, only temp to show grids 
- *
- *
- *
-*/
-.column,
-.columns {
-  background-color: rgba(246, 191, 222, 0.6);
-  border: 1px solid red;
-  border-top: none;
-  border-bottom: none;
-}
-
 /* Type */
 body {
   font: 87.5% "Open Sans", Verdana, Geneva, sans-serif;

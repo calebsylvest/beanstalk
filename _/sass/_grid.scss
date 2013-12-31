@@ -10,6 +10,7 @@
 $row-width: 960px !default;
 $column-gutter: 0.9375em !default;
 $total-columns: 12 !default;
+$show-grid: false !default;
 
 .row {
   width: 100%;
@@ -103,15 +104,16 @@ $total-columns: 12 !default;
   }
 }
 
-/* this should be deleted, only temp to show grids 
- *
- *
- *
-*/
+// if $show-grid is set to true all grid columns will 
+// be visible, just for test or example purposes
 .column,
 .columns {
+
+  @if $show-grid == true {
   background-color: rgba(246,191,222,.6);
   border: 1px solid red;
   border-top: none;
   border-bottom: none;
+  }
+  
 } 
