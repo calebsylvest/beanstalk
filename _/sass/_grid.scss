@@ -59,13 +59,6 @@ $show-grid: false !default;
   padding-left: $column-gutter;
   padding-right: $column-gutter;
   position: relative;
-  
-  &:last-child {
-    float: right;
-  }
-  &:first-child {
-    float: left;
-  }
 }
 
 //

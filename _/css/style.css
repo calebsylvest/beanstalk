@@ -321,14 +321,6 @@ select {
   padding-right: 0.9375em;
   position: relative;
 }
-.column:last-child,
-.columns:last-child {
-  float: right;
-}
-.column:first-child,
-.columns:first-child {
-  float: left;
-}
 
 .small-col-1 {
   width: 8.33333%;
