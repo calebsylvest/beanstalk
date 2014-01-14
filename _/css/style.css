@@ -325,6 +325,10 @@ select {
 .columns:last-child {
   float: right;
 }
+.column:first-child,
+.columns:first-child {
+  float: left;
+}
 
 .small-col-1 {
   width: 8.33333%;

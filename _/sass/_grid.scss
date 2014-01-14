@@ -63,6 +63,9 @@ $show-grid: false !default;
   &:last-child {
     float: right;
   }
+  &:first-child {
+    float: left;
+  }
 }
 
 //
