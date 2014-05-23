@@ -6,3 +6,7 @@
 @import "global";
 @import "grid";
 @import "type";
+
+body {
+	background-color: $primary-color;
+}
