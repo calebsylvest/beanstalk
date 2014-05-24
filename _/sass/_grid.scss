@@ -26,6 +26,7 @@ $show-grid: false !default;
     clear: both;
   }
   
+  // nested row
   .row {
     width: auto;
     margin-left: -($column-gutter);
@@ -67,7 +68,7 @@ $show-grid: false !default;
 
 // generate small grid classes
 @for $i from 1 through $total-columns {
-  .small-col-#{$i} {
+  .small-#{$i} {
     width: ((100 / $total-columns) * $i) * 1%;
   }
 }
@@ -76,7 +77,35 @@ $show-grid: false !default;
   
   // generate flexible grid above mobile  
   @for $i from 1 through $total-columns {
-    .col-#{$i} {
+    .medium-#{$i} {
+      width: ((100 / $total-columns) * $i) * 1%;
+    }
+  }
+  
+  // generate push grid options
+  @for $i from 1 through $total-columns {
+    .push-#{$i} {
+      position: relative;
+      left: ((100 / $total-columns) * $i) * 1%;
+      right: auto;
+    }
+  }
+  
+  // generate pull grid options
+  @for $i from 1 through $total-columns {
+    .pull-#{$i} {
+      position: relative;
+      right: ((100 / $total-columns) * $i) * 1%;
+      left: auto;
+    }
+  }
+}
+
+@media screen and (min-width: $medium-screen) {
+  
+  // generate flexible grid above mobile  
+  @for $i from 1 through $total-columns {
+    .large-#{$i} {
       width: ((100 / $total-columns) * $i) * 1%;
     }
   }
