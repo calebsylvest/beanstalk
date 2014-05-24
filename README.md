@@ -2,7 +2,7 @@
 
 A flexible, responsive grid system built with attitude using Sass. Beanstalk is a simple grid solution innately created as a Sass partial for easy addition to any project. Beanstalk is powerful and customizable, but not overly complicated. It offers easy to use and edit classes for building a mobile first, 100% responsive website.
 
-Beanstalk was loosely based off the grid system used by Zurb's Foundation, but available for addition to any project. So if you like working with Foundation and want a similar grid system to add to other project, Beanstalk is for you.
+Beanstalk is based on the grid system used by Zurb's Foundation, but available for addition to any project. So if you like working with Foundation and want a similar grid system to add to other projects, Beanstalk is for you.
 
 ## Getting Started
 
@@ -13,7 +13,7 @@ Getting started with Beanstalk is super simple, after all the only necessity is 
 - Compile code (I'm using Compass)
 - Check the compiled CSS file, all Beanstalk grid classes should be available
 
-It's suggested to use the super cool global border-box method when working with Beanstalk. Doing so will allow for better, bullet proof grids with nesting capabilities. For more information about using the global border-box see what Paul Irish says about it: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+Note: I suggest using the super cool global border-box method when working with Beanstalk. Doing so will allow for better, bullet proof grids with nesting capabilities. For more information about using the global border-box see what Paul Irish says about it: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
 
 ```
 /* apply a natural box layout model to all elements */
@@ -46,11 +46,11 @@ Beanstalk uses a `.row` and `.col-#` syntax to build a flexible grid, where all 
 ```
 <div class="row">
   
-  <div class="col-8 column">
+  <div class="large-8 column">
     This is the main content area.
   </div>
   
-  <div class="col-4 column">
+  <div class="large-4 column">
     This is the sidebar area.
   </div>
   
@@ -61,26 +61,25 @@ Beanstalk uses a `.row` and `.col-#` syntax to build a flexible grid, where all 
 
 The Beanstalk grid system works with a mobile first mentality, meaning the bare minimum of code is loaded on mobile devices (with the least amount of bandwidth) and built upon for desktop browsers (typically higher bandwidth). 
 
-By default all `.column` grid containers are 100% full-width on mobile, defined by the `.column` class. The `.col-#` grid styles kick in on larger viewports through the use of a @media-query calling a `$small-screen` variable (you can change the variable to whatever your want, or just a number).
+By default all `.column` grid containers are 100% full-width, defined by the `.column` class. Column widths can be specified for each available break point—small, medium, and large—defaulting to 100% width. Breakpoints are controlled via the variables `$small-screen` for the first breakpoint and `$medium-screen` for the second, but you can change the variable names to whatever you like, or a number.
 
-Beanstalk also offers extra mobile styles to minutely control the display of content specifically on mobile devices. Add the mobile class `.small-col-#` on top of other grid classes for specific positioning on mobile.
 
 ```
 <div class="row">
 
-  <div class"small-col-6 col-4 column">
+  <div class"small-6 medium-4 column">
     On mobile, will be a two column grid and on desktop will be four column
   </div>
   
-  <div class"small-col-6 col-4 column">
+  <div class"small-6 medium-4 column">
     On mobile, will be a two column grid and on desktop will be four column
   </div>
   
-  <div class"small-col-6 col-4 column">
+  <div class"small-6 medium-4 column">
     On mobile, will be a two column grid and on desktop will be four column
   </div>
   
-  <div class"small-col-6 col-4 column">
+  <div class"small-6 medium-4 column">
     On mobile, will be a two column grid and on desktop will be four column
   </div>
 
@@ -89,40 +88,45 @@ Beanstalk also offers extra mobile styles to minutely control the display of con
 
 ### Modifiers
 
-Beanstalk offers several types of grid modifiers allow the right amount of control of a website layout.
+Beanstalk offers several types of grid modifiers for complete control of layout.
 
-#### Push
+#### Offset
 
-Adding a `.push-#` class offers a way to bump content to the right.
+#### Source Ordering
+
+##### Push
+
+Column ordering can be flipped using the push and pull classes. The push/pull option can be specific to breakproints by using the `.{size}-push-#` and `.{size}-pull-#` syntax.
 
 ```
 <div class="row">
 
-  <div class="col-4 push-2 column">
-    A four column container that is pushed two column widths to the right.
+  <div class="medium-4 medium-push-6 column">
+    A four column container.
   </div>
-  <div class="col-6 column">
+  <div class="medium-6 medium-pull-4 column">
     A six column container.
   </div>
   
 </div>
 ```
 
-#### Pull
+##### Reset Source Order
 
-Adding a `.pull-#` class offers a way to pull content to the left.
+If you need to reset the source order of elements on a breakpoint and above use the `.{size}-reset-order` class to do so. In the example below we flipped the order of the columns on a medium screen, but reset the source order on large screens.
 
 ```
 <div class="row">
 
-  <div class="col-6 column">
-    A six column container.
+  <div class="medium-4 medium-push-6 large-reset-order column">
+    A four column container.
   </div>
-  <div class="col-4 pull-2 column">
-    A four column container that is pulled two column widths to the left.
+  <div class="medium-6 medium-pull-4 large-reset-order column">
+    A six column container.
   </div>
   
 </div>
+
 ```
 
 #### Collapse
@@ -132,10 +136,10 @@ Adding `.collapse` along with a `.row` will zero out the gutters of all children
 ```
 <div class="row collapse">
 
-  <div class="col-8 column">
+  <div class="large-8 column">
     A main content section that no longer has gutters.
   </div>
-  <div class="col-4 column">
+  <div class="large-4 column">
     A secondary content section that no longer has gutters.
   </div>
 
@@ -149,10 +153,10 @@ Adding `.collapse-outer` along with a `.row` will zero out the left gutter of th
 ```
 <div class="row collapse-outer">
 
-  <div class="col-8 column">
+  <div class="large-8 column">
     A main content section that has a right gutter but the left gutter has been zeroed out.
   </div>
-  <div class="col-4 column">
+  <div class="large-4 column">
     A secondary content section that has a left gutter but the right gutter has been zeroed out.
   </div>
 
@@ -165,4 +169,4 @@ If you have a question or issue:
 
 1. [Log an Issue] (https://github.com/calebsylvest/beanstalk/issues "Log an Issue for Beanstalk")
 2. Send me an email at [caleb.sylvest@gmail.com] (mailto:caleb.sylvest@gmail.com)
-3. Find me on Twitter at [@sylvezine](https://twitter.com/sylvezine)
+3. Find me on Twitter at [@sylvezine](https://twitter.com/calebsylvest)
