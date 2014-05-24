@@ -1361,3 +1361,12 @@ h6 {
 body {
   background-color: #b2d234;
 }
+
+.view-grid {
+  background-color: rgba(70, 70, 58, 0.3);
+  text-align: center;
+  color: #46463a;
+  border-radius: 4px;
+  font-size: .7em;
+  padding: .5em;
+}

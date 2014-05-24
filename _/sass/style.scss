@@ -10,3 +10,12 @@
 body {
 	background-color: $primary-color;
 }
+
+.view-grid {
+	background-color: rgba($secondary-color, .3);
+	text-align: center;
+	color: $secondary-color;
+	border-radius: 4px;
+	font-size: .7em;
+	padding: .5em;
+}
