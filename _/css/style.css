@@ -576,6 +576,54 @@ select {
   width: 100%;
 }
 
+.small-offset-1 {
+  margin-left: 8.33333%;
+}
+
+.small-offset-2 {
+  margin-left: 16.66667%;
+}
+
+.small-offset-3 {
+  margin-left: 25%;
+}
+
+.small-offset-4 {
+  margin-left: 33.33333%;
+}
+
+.small-offset-5 {
+  margin-left: 41.66667%;
+}
+
+.small-offset-6 {
+  margin-left: 50%;
+}
+
+.small-offset-7 {
+  margin-left: 58.33333%;
+}
+
+.small-offset-8 {
+  margin-left: 66.66667%;
+}
+
+.small-offset-9 {
+  margin-left: 75%;
+}
+
+.small-offset-10 {
+  margin-left: 83.33333%;
+}
+
+.small-offset-11 {
+  margin-left: 91.66667%;
+}
+
+.small-offset-12 {
+  margin-left: 100%;
+}
+
 .small-push-1 {
   position: relative;
   left: 8.33333%;
@@ -767,6 +815,54 @@ select {
 
   .medium-12 {
     width: 100%;
+  }
+
+  .medium-offset-1 {
+    margin-left: 8.33333%;
+  }
+
+  .medium-offset-2 {
+    margin-left: 16.66667%;
+  }
+
+  .medium-offset-3 {
+    margin-left: 25%;
+  }
+
+  .medium-offset-4 {
+    margin-left: 33.33333%;
+  }
+
+  .medium-offset-5 {
+    margin-left: 41.66667%;
+  }
+
+  .medium-offset-6 {
+    margin-left: 50%;
+  }
+
+  .medium-offset-7 {
+    margin-left: 58.33333%;
+  }
+
+  .medium-offset-8 {
+    margin-left: 66.66667%;
+  }
+
+  .medium-offset-9 {
+    margin-left: 75%;
+  }
+
+  .medium-offset-10 {
+    margin-left: 83.33333%;
+  }
+
+  .medium-offset-11 {
+    margin-left: 91.66667%;
+  }
+
+  .medium-offset-12 {
+    margin-left: 100%;
   }
 
   .medium-push-1 {
@@ -968,6 +1064,54 @@ select {
 
   .large-12 {
     width: 100%;
+  }
+
+  .large-offset-1 {
+    margin-left: 8.33333%;
+  }
+
+  .large-offset-2 {
+    margin-left: 16.66667%;
+  }
+
+  .large-offset-3 {
+    margin-left: 25%;
+  }
+
+  .large-offset-4 {
+    margin-left: 33.33333%;
+  }
+
+  .large-offset-5 {
+    margin-left: 41.66667%;
+  }
+
+  .large-offset-6 {
+    margin-left: 50%;
+  }
+
+  .large-offset-7 {
+    margin-left: 58.33333%;
+  }
+
+  .large-offset-8 {
+    margin-left: 66.66667%;
+  }
+
+  .large-offset-9 {
+    margin-left: 75%;
+  }
+
+  .large-offset-10 {
+    margin-left: 83.33333%;
+  }
+
+  .large-offset-11 {
+    margin-left: 91.66667%;
+  }
+
+  .large-offset-12 {
+    margin-left: 100%;
   }
 
   .large-push-1 {

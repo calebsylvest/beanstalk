@@ -73,6 +73,13 @@ $show-grid: false !default;
   }
 }
 
+// generate small gird offset options
+@for $i from 1 through $total-columns {
+  .small-offset-#{$i} {
+    margin-left: ((100 / $total-columns) * $i) * 1%;
+  }
+}
+
 // generate small push grid options
 @for $i from 1 through $total-columns {
   .small-push-#{$i} {
@@ -99,8 +106,15 @@ $show-grid: false !default;
       width: ((100 / $total-columns) * $i) * 1%;
     }
   }
+
+  // generate medium gird offset options
+  @for $i from 1 through $total-columns {
+    .medium-offset-#{$i} {
+      margin-left: ((100 / $total-columns) * $i) * 1%;
+    }
+  }
   
-  // generate push grid options
+  // generate medium push grid options
   @for $i from 1 through $total-columns {
     .medium-push-#{$i} {
       position: relative;
@@ -109,7 +123,7 @@ $show-grid: false !default;
     }
   }
   
-  // generate pull grid options
+  // generate medium pull grid options
   @for $i from 1 through $total-columns {
     .medium-pull-#{$i} {
       position: relative;
@@ -136,8 +150,15 @@ $show-grid: false !default;
       width: ((100 / $total-columns) * $i) * 1%;
     }
   }
+
+  // generate large gird offset options
+  @for $i from 1 through $total-columns {
+    .large-offset-#{$i} {
+      margin-left: ((100 / $total-columns) * $i) * 1%;
+    }
+  }
   
-  // generate push grid options
+  // generate large push grid options
   @for $i from 1 through $total-columns {
     .large-push-#{$i} {
       position: relative;
@@ -146,7 +167,7 @@ $show-grid: false !default;
     }
   }
   
-  // generate pull grid options
+  // generate large pull grid options
   @for $i from 1 through $total-columns {
     .large-pull-#{$i} {
       position: relative;
@@ -162,6 +183,7 @@ $show-grid: false !default;
     right: auto;
     float: left; 
   }
+
 }
 
 // if $show-grid is set to true all grid columns will 
