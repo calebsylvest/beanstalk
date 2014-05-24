@@ -13,6 +13,15 @@ Getting started with Beanstalk is super simple, after all the only necessity is 
 - Compile code (I'm using Compass)
 - Check the compiled CSS file, all Beanstalk grid classes should be available
 
+It's suggested to use the super cool global border-box method when working with Beanstalk. Doing so will allow for better, bullet proof grids with nesting capabilities. For more information about using the global border-box see what Paul Irish says about it: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+
+```
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+```
+
 ## How To Use
 
 Beanstalk uses a `.row` and `.col-#` syntax to build a flexible grid.
