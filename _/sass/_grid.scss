@@ -73,6 +73,24 @@ $show-grid: false !default;
   }
 }
 
+// generate small push grid options
+@for $i from 1 through $total-columns {
+  .small-push-#{$i} {
+    position: relative;
+    left: ((100 / $total-columns) * $i) * 1%;
+    right: auto;
+  }
+}
+
+// generate small pull grid options
+@for $i from 1 through $total-columns {
+  .small-pull-#{$i} {
+    position: relative;
+    right: ((100 / $total-columns) * $i) * 1%;
+    left: auto;
+  }
+}
+
 @media screen and (min-width: $small-screen) {
   
   // generate flexible grid above mobile  
@@ -84,7 +102,7 @@ $show-grid: false !default;
   
   // generate push grid options
   @for $i from 1 through $total-columns {
-    .push-#{$i} {
+    .medium-push-#{$i} {
       position: relative;
       left: ((100 / $total-columns) * $i) * 1%;
       right: auto;
@@ -93,12 +111,21 @@ $show-grid: false !default;
   
   // generate pull grid options
   @for $i from 1 through $total-columns {
-    .pull-#{$i} {
+    .medium-pull-#{$i} {
       position: relative;
       right: ((100 / $total-columns) * $i) * 1%;
       left: auto;
     }
   }
+
+  .medium-reset-order {
+    margin-left: 0;
+    margin-right: 0;
+    left: auto;
+    right: auto;
+    float: left; 
+  }
+
 }
 
 @media screen and (min-width: $medium-screen) {
@@ -112,7 +139,7 @@ $show-grid: false !default;
   
   // generate push grid options
   @for $i from 1 through $total-columns {
-    .push-#{$i} {
+    .large-push-#{$i} {
       position: relative;
       left: ((100 / $total-columns) * $i) * 1%;
       right: auto;
@@ -121,11 +148,19 @@ $show-grid: false !default;
   
   // generate pull grid options
   @for $i from 1 through $total-columns {
-    .pull-#{$i} {
+    .large-pull-#{$i} {
       position: relative;
       right: ((100 / $total-columns) * $i) * 1%;
       left: auto;
     }
+  }
+
+  .large-reset-order {
+    margin-left: 0;
+    margin-right: 0;
+    left: auto;
+    right: auto;
+    float: left; 
   }
 }
 
