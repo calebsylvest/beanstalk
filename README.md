@@ -167,6 +167,6 @@ Adding `.collapse-outer` along with a `.row` will zero out the left gutter of th
 
 If you have a question or issue:
 
-1. [Log an Issue] (https://github.com/calebsylvest/beanstalk/issues "Log an Issue for Beanstalk")
-2. Send me an email at [caleb.sylvest@gmail.com] (mailto:caleb.sylvest@gmail.com)
-3. Find me on Twitter at [@sylvezine](https://twitter.com/calebsylvest)
+1. [Log an Issue](https://github.com/calebsylvest/beanstalk/issues "Log an Issue for Beanstalk")
+2. Send me an email at [caleb.sylvest@gmail.com](mailto:caleb.sylvest@gmail.com)
+3. Find me on Twitter at [@calebsylvest](https://twitter.com/calebsylvest)
